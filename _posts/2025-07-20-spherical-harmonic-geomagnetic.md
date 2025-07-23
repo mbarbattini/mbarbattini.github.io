@@ -57,7 +57,7 @@ $$
 where \\(P_{l}^m(\cos\theta)\\) are the associated Legendre polynomials. We sum over two indices: \\(l\\) and \\(m\\). The coefficients we need to solve for are \\(g_{lm}\\) and \\(h_{lm}\\), up to degree \\(N=3\\), which means there are 15 total coefficients to be determined. Increasing the degree means that the solution is more accurate, but adds many more coeffients in the expansion.
 
 
-| \\(l\\) | \\(m\\) | \((g_{l,m}\\) | \\(h_{l,m}\\) |
+| \\(l\\) | \\(m\\) | \\(g_{lm}\\) | \\(h_{lm}\\) |
 | --- | --- | --------- | --------- |
 | 1 | 0 | \\(g_{10}\\) | Not used |
 | 1 | 1 | \\(g_{11}\\) | \\(h_{11}\\) |

@@ -3,33 +3,33 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "Matthew Barbattini"
-title_separator          : "-"
-name                     : &name "Matthew Barbattini"
-description              : &description "R&D Engineer 2 @ Honeywell"
-url                      : https://mbarbattini.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "mbarbattini/mbarbattini.github.io"
+locale: "en-US"
+site_theme: "default"
+title: "Matthew Barbattini"
+title_separator: "-"
+name: &name "Matthew Barbattini"
+description: &description "R&D Engineer 2 @ Honeywell"
+url: https://mbarbattini.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+baseurl: "" # the subpath of your site, e.g. "/blog"
+repository: "mbarbattini/mbarbattini.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : ""
-  location         : "Denver, CO"
-  employer         : "Honeywell"
-  uri              : # URL
-  email            : "mbarbattini@gmail.com" 
+  avatar: "profile.png"
+  name: "Matthew Barbattini"
+  pronouns: # example: "she/her"
+  bio: "R&D Engineer with an expertise in superconducting devices"
+  location: "Denver, CO"
+  employer: "Honeywell"
+  uri: # URL
+  email: "mbarbattini@gmail.com"
 
   # # Academic websites
   # academia         : # URL
@@ -47,8 +47,8 @@ author:
   # codepen          : # Username
   # dribbble         : # Username
   # github           : "academicpages"
-  # kaggle           : # Username  
-  # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  # kaggle           : # Username
+  # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # # Social media
   # artstation       : # Username
@@ -82,54 +82,52 @@ author:
 #   books:
 #     title: 'Books'
 #   manuscripts:
-#     title: 'Journal Articles'    
+#     title: 'Journal Articles'
 #   conferences:
 #     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : false
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs: false # true, false (default)
+words_per_minute: 160
+future: false
+read_more: "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link: false #change to true to add link to talkmap on talks page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider: # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname:
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields: ["name", "email", "url", "message"]
+  branch: "gh-pages" # "master", "gh-pages"
+  commitMessage: "New comment."
+  filename: comment-{@timestamp}
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "email", "message"]
   transforms:
-    email                : "md5"
+    email: "md5"
   generatedFields:
     date:
-      type               : "date"
+      type: "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
-
+  hide: false # change to true to hide the RSS feed in the footer
+  path: # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
 
 # # Social Sharing
 # twitter:
@@ -147,13 +145,11 @@ yandex_site_verification :
 #   name                   : # If the user or organization name differs from the site's name
 #   links: # An array of links to social media profiles
 
-
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider: "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          :
-
+    tracking_id:
 
 # Reading Files
 include:
@@ -193,14 +189,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -212,7 +206,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
 
 # # These settings control the types of collections used by the template
 # collections:
@@ -228,7 +221,6 @@ kramdown:
 #   talks:
 #     output: true
 #     permalink: /:collection/:path/
-
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -286,19 +278,16 @@ defaults:
   #     author_profile: true
   #     share: true
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins
 plugins:
@@ -317,7 +306,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
-
 
 # Archives
 #  Type
@@ -346,7 +334,6 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-
 
 # HTML Compression
 # - http://jch.penibelst.de/
