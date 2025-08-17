@@ -1,8 +1,0 @@
-body {
-  margin: 40px;   /* adds space around entire page */
-}
-
-.page-content {
-  margin: 20px auto;
-  max-width: 800px;  /* keeps content centered */
-}
