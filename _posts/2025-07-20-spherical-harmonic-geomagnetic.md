@@ -3,6 +3,7 @@ title: Calculating Earth's Magnetic Field using Spherical Harmonic Interpolation
 date: 2025-07-20 11:00:00
 ---
 
+All code can be found [here](https://github.com/mbarbattini/computational_physics/tree/main/4_spherical_harmonic_geomagnetic_field)
 
 At the end of 2024 I found this [NASA White Paper](https://ntrs.nasa.gov/api/citations/20140007516/downloads/20140007516.pdf) which explained how to model the Earth's magnetic field using spherical harmonic interpolation. At the end of the paper the authors provided a challenge: use magnetic field data acquired by the MAGSAT spacecraft and calculate the spherical harmonic coefficients of the Earth's magnetic field up to 3rd order. To compare my solution, they also provided a dataset that contained their calculated coefficients.
 

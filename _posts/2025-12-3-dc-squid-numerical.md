@@ -1,3 +1,8 @@
+---
+title: Numerically simulating the dc-SQUID equations of motion
+date: 2025-12-3 11:00:00
+---
+
 # Numerically solving the dc-SQUID equations of motion using the Runge-Kutta 4(5) method
 
 The full code can be found on my Github repository [link](https://github.com/mbarbattini/computational_physics/tree/main/1_dc_squid_numerical)
