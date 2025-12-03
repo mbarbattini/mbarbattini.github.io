@@ -22,7 +22,7 @@ repository: "mbarbattini/mbarbattini.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar: "profile.png"
+  avatar: "my_headshot.jpeg"
   name: "Matthew Barbattini"
   pronouns: # example: "she/her"
   bio: "R&D Engineer with an expertise in superconducting devices"

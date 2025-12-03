@@ -2,11 +2,9 @@
 title: Numerically simulating the dc-SQUID equations of motion
 date: 2025-12-3 11:00:00
 ---
-
-# Numerically solving the dc-SQUID equations of motion using the Runge-Kutta 4(5) method
+Here we numerically simulate the dc-SQUID and plot the voltage across the junction and compare it to data presented in research papers.
 
 The full code can be found on my Github repository [link](https://github.com/mbarbattini/computational_physics/tree/main/1_dc_squid_numerical)
-
 
 ### References
 
@@ -313,6 +311,11 @@ At lower bias currents, there are large portions of the plot where the voltage i
 
 Therefore the best bias point would be the $2.5I_0$ curve because it gives a nice sinusoidal shape with relatively large transfer coefficient. This supports the idea that the SQUID should be biased in the resistive regime $I_b > 2I_0$. 
 
+Here is a plot from a research paper showing the same thing from measured data
+
+![](/images/dc_squid/measured_v_phi_bolometer.png)
+
+From https://arxiv.org/pdf/1112.4215
 
 
 
