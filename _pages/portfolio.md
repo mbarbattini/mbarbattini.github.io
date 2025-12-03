@@ -48,9 +48,14 @@ $$
 we can substitute the expression to show that the scalar potential must satisfy Laplace's equation
 
 $$
-\nabla \cdot (-\mu_0 \nabla V) = 0 \\
-\nabla^2 V = 0 \\
+\nabla \cdot (-\mu_0 \nabla V) = 0
 $$
+
+$$
+\nabla^2 V = 0
+$$
+
+
 
 Solving Laplace's equation in spherical coordinates is a popular exercise that takes a bit of mathematical rigor, so I'm going to skip it in this writeup. The main result is that the scalar potential \\(V\\) can be calculated as a series of spherical harmonic functions
 
