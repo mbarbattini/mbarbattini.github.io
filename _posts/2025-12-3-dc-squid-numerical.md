@@ -26,14 +26,14 @@ The story begins with a superconducting wire wound to form a closed loop. The ar
 
 ![](/images/dc_squid/superconducting_loop.png)
 
-From DOI: 10.13140/RG.2.2.19768.29446 
+From DOI: 10.13140/RG.2.2.19768.29446
 
-But quantum mechanics enters the story because the loop cannot allow any value of magnetic flux to penetrate the loop, it has to be quantized in units of the magnetic flux quantum $\Phi_0=h/2e = 2.067\times 10^{-15}\ \ \mathrm{Wb}$. The reason is that in the superconducting state, the macroscopic wavefunction exists around the entire loop, and since the wavefunction must have a single value everywhere in the loop, this leads to the periodic condition
+But quantum mechanics enters the story because the loop cannot allow any value of magnetic flux to penetrate the loop, it has to be quantized in units of the magnetic flux quantum \(\Phi_0=h/2e = 2.067\times 10^{-15}\ \ \mathrm{Wb}\). The reason is that in the superconducting state, the macroscopic wavefunction exists around the entire loop, and since the wavefunction must have a single value everywhere in the loop, this leads to the periodic condition
 
 $$
 \Phi=n\frac{h}{q}=n\Phi_0
 $$
-where $q=2e$ is the charge of the particle, in this case a Cooper pair (two electrons with charge $e$), and $n$ is an integer. Therefore the magnetic flux quantum is $\Phi_0=\frac{h}{2e}$
+where \(q=2e\) is the charge of the particle, in this case a Cooper pair (two electrons with charge \(e$\)), and \(n\) is an integer. Therefore the magnetic flux quantum is \(\Phi_0=\frac{h}{2e}\)
 
 ### Josephson Junctions
 If you add a small, non-superconducting barrier in-between a location in the superconducting loop, you create a Josephson junction. Here, the macroscopic wavefunction will tunnel through the small barrier. 
@@ -44,7 +44,7 @@ $$
 I=I_c\sin(\varphi)
 $$
 
-where $I_c$ is the critical current of the junction, and $\varphi$ is the phase of the wavefunction across the junction,
+where \(I_c\) is the critical current of the junction, and \(\varphi\) is the phase of the wavefunction across the junction,
 
 and the AC equation
 
@@ -52,7 +52,7 @@ $$
 \frac{d}{dt}(\Delta\varphi)=\frac{2eV}{\hbar}
 $$
 
-which says the time rate of change of the phase difference $\Delta \varphi = \varphi_2-\varphi_1$ is related to the voltage across the junction.
+which says the time rate of change of the phase difference \(\Delta \varphi = \varphi_2-\varphi_1\) is related to the voltage across the junction.
 
 
 ### DC SQUID
@@ -71,33 +71,33 @@ From SQUID Handbook, John Clarke.
 ### Time-Domain Simulations
 
 
-When simulating the dc-SQUID in the time domain, we need to work on a time scale that is determined by the characteristic frequency of the system $\omega_c$. To get there, we start with the Josephson frequency $\omega_J$ which is derived from substituting the AC Josephson equation into the DC Josephson equation
+When simulating the dc-SQUID in the time domain, we need to work on a time scale that is determined by the characteristic frequency of the system \(\omega_c\). To get there, we start with the Josephson frequency \(\omega_J\) which is derived from substituting the AC Josephson equation into the DC Josephson equation
 
 $$
 I_s=I_c\sin(\frac{2eV}{\hbar} t)
 $$
 
-so the angular frequency term is $\omega_J$
+so the angular frequency term is \(\omega_J\)
 
 $$
 \omega_J=\frac{2eV}{\hbar}=\frac{2\pi}{\Phi_0}V
 $$
 
-When you apply a voltage $V$ across a JJ you get a oscillating super-current at frequency $\omega_J$. For example, a voltage of 1 $\mu V$ gives a frequency of 
+When you apply a voltage \(V\) across a JJ you get a oscillating super-current at frequency \(\omega_J\). For example, a voltage of 1 \(\mu V\) gives a frequency of 
 
 $$
 \frac{\omega_J}{2\pi}=\frac{1 \times 10^{-6} \ \ \mathrm{V}}{2.067\times 10^{-15} \ \ \mathrm{Wb}} = 483.7 \ \ \mathrm{MHz}
 $$
 
-In this simulation, we can use a characteristic voltage $V_c=I_0R$ where $I_0$ is the critical current, which gives the _characteristic frequency_ $\omega_c$ 
+In this simulation, we can use a characteristic voltage \(V_c=I_0R\) where \(I_0\) is the critical current, which gives the _characteristic frequency_ \(\omega_c\) 
 
 $$
 \frac{\omega_c}{2\pi}= I_0 R / \Phi_0
 $$
 
-For typical devices, $I_0 \approx 10 \ \mu \mathrm{A}$ and $R\approx 20 \ \Omega$ which gives a voltage of 200 $\mu \mathrm{V}$ so the typical frequency is $\approx 96\ \mathrm{GHz}$. 
+For typical devices, \(I_0 \approx 10 \ \mu \mathrm{A}\) and \(R\approx 20 \ \Omega\) which gives a voltage of 200 \(\mu \mathrm{V}\) so the typical frequency is \(\approx 96\ \mathrm{GHz}\). 
 
-This explains that in a time-domain simulation we need to step forward on the order of $\frac{1}{96 \ \mathrm{GHz}} \approx 2 \times 10^{-11} \ \mathrm{s}$ to capture how the system changes.
+This explains that in a time-domain simulation we need to step forward on the order of \(\frac{1}{96 \ \mathrm{GHz}} \approx 2 \times 10^{-11} \ \mathrm{s}\) to capture how the system changes.
 
 
 Since the SQUID can also be considered a parallel RC circuit, there is another characteristic frequency
@@ -111,7 +111,7 @@ $$
 \omega_p^2=\omega_c \omega_{RC}
 $$
 
-where $\omega_P$ is the plasma frequency.
+where \(\omega_P\) is the plasma frequency.
 
 ### Dimensionless parameters
 
@@ -150,25 +150,25 @@ $$
 \frac{d}{dt} \dot \delta_2 = \frac{2\pi}{\Phi_0}\frac{1}{C}\bigg[\frac{I}{2} + \Gamma I_0 - I\sin(\delta_2)\bigg] + J
 $$
 
-where $\delta_1$ is the phase across the first Josephson junction, and $\delta_2$ is the phase across the second Josephson Junction. 
+where \(\delta_1\) is the phase across the first Josephson junction, and \(\delta_2\) is the phase across the second Josephson Junction. 
 
-The first and third equations are simple: the time rate of change of $\delta_1$ is $\dot \delta_1$, and then $\dot \delta_1$ is determined by the second equation which actually has the physics in it. Then the same goes for $\delta_2$. There are several terms to discuss:
+The first and third equations are simple: the time rate of change of \(\delta_1\) is \(\dot \delta_1\), and then \(\dot \delta_1\) is determined by the second equation which actually has the physics in it. Then the same goes for \(\delta_2\). There are several terms to discuss:
 
-- The noise parameter $\Gamma$ is the ratio of the thermal energy to the Josephson energy
-$$ 
+- The noise parameter \(\Gamma\) is the ratio of the thermal energy to the Josephson energy
+$$
 \Gamma = \frac{E_{th}}{E_J}=\frac{k_B T}{I_0 \Phi_0 / 2\pi}=\frac{2\pi}{\Phi_0} \frac{k_B T}{I_0}
 $$
 
-So if the thermal energy is greater than the Josephson energy, then the noise parameter will be greater than 1. This would correspond to a resistive SQUID, i.e. one that is above its $T_c$. For a SQUID operating at a typical temperature of ~ 4K, $\Gamma < 0.1$.
+So if the thermal energy is greater than the Josephson energy, then the noise parameter will be greater than 1. This would correspond to a resistive SQUID, i.e. one that is above its \(T_c\). For a SQUID operating at a typical temperature of ~ 4K, \(\Gamma < 0.1\).
 
-- The DC Josephson equation shows up as the $-I\sin(\delta_1)$ term, which makes the differential equations non-linear.
+- The DC Josephson equation shows up as the \(-I\sin(\delta_1)\) term, which makes the differential equations non-linear.
 
 - The circulating current 
 $$
 J=\frac{I_0}{\pi\beta}\bigg(  \delta_1 - \delta_2 - \frac{2\pi \Phi_{ext}}{\Phi_0}\bigg)
 $$
 
-is the current that is generated as a consequence of the quantization of magnetic flux. When an external flux $\Phi_{ext}$ is applied to the SQUID, the circulating current will be generated in order to keep the flux an integer multiple of $\Phi_0$, akin to Lenz's law. The direction of the current is either clockwise or counterclockwise around the whole SQUID loop, depending on what part of the $V-\Phi$ curve we are on. So this means that for the first junction the circulating current _adds_ to the current through the SQUID $I$, but on the other junction it _subtracts_ from $I$. 
+is the current that is generated as a consequence of the quantization of magnetic flux. When an external flux \(\Phi_{ext}\) is applied to the SQUID, the circulating current will be generated in order to keep the flux an integer multiple of \(\Phi_0\), akin to Lenz's law. The direction of the current is either clockwise or counterclockwise around the whole SQUID loop, depending on what part of the \(V-\Phi\) curve we are on. So this means that for the first junction the circulating current _adds_ to the current through the SQUID \(I\), but on the other junction it _subtracts_ from \(I\). 
 
 To write the equations more compactly, we can put them in a vector known as the state vector. Then the time evolution of the state vector looks like this
 
@@ -189,11 +189,11 @@ f_2 \\
 \end{pmatrix}
 $$
 
-where $f_1$ and $f_2$ are the right hand sides of the equations 2 and 4 above.
+where \(f_1\) and \(f_2\) are the right hand sides of the equations 2 and 4 above.
 
 ### Dependent Variables
 
-The AC Josephson equation allows us to simulate something that has been measured by experimentalists: the voltage across the junction $V$ (unlike the phase of a wavefunction which is not an observable). Since this equation is for a single junction, we need to add them together for 2 junctions
+The AC Josephson equation allows us to simulate something that has been measured by experimentalists: the voltage across the junction \(V\) (unlike the phase of a wavefunction which is not an observable). Since this equation is for a single junction, we need to add them together for 2 junctions
 
 $$
 \frac{d}{dt}\delta_1 + \frac{d}{dt}\delta_2 = \frac{2eV}{\hbar} + \frac{2eV}{\hbar}
@@ -211,7 +211,7 @@ $$
 V = \frac{h}{2\pi 4e}(\dot \delta_1 + \dot \delta_2) 
 $$
 
-and since the magnetic flux quantum is $\Phi_0=\frac{h}{2e}$ we get
+and since the magnetic flux quantum is \(\Phi_0=\frac{h}{2e}\) we get
 
 $$
 V = \frac{\Phi_0}{4\pi}(\dot \delta_1 + \dot \delta_2) 
@@ -274,48 +274,48 @@ The first thing I wanted to simulate was an IV curve. If everything works correc
 The function looks like this: 
 
 At each time step 
-1) Set the current through the SQUID $I$ to a specific value
+1) Set the current through the SQUID \(I\) to a specific value
 2) Simulate how the state vector changes in time with `solve_ivp()`
-3) Use the final state as the initial condition to the next $I$ value in the sweep
+3) Use the final state as the initial condition to the next \(I\) value in the sweep
 
-Here is the simulated IV curve when sweeping the current from -50 $\mu \mathrm{A}$ to  +50 $\mu \mathrm{A}$. The SQUID was set to the following parameters: $I_0=10\ \mu \mathrm{A}$, $L=120\ \mathrm{pH}$, $R=20 \ \Omega$, $C=0.08 \ \mathrm{pF}$
+Here is the simulated IV curve when sweeping the current from -50 \(\mu \mathrm{A}\) to  +50 \(\mu \mathrm{A}\). The SQUID was set to the following parameters: \(I_0=10\ \mu \mathrm{A}\), \(L=120\ \mathrm{pH}\), \(R=20 \ \Omega\), \(C=0.08 \ \mathrm{pF}\)
 
 ![ivcurve](/images/dc_squid/iv_curve.png)
 
-This confirms that the code is working correctly because the SQUID enters the resistive state when the bias current is 20 $\mu A$ which is twice the critical current $2I_0$, as expected because the current splits equally on each branch of the SQUID which each have a critical current of $I_0$.
+This confirms that the code is working correctly because the SQUID enters the resistive state when the bias current is 20 \(\mu A\) which is twice the critical current \(2I_0\), as expected because the current splits equally on each branch of the SQUID which each have a critical current of \(I_0\).
 
-### V-$\Phi$ curve
+### V-\(\Phi\) curve
 
-This function sweeps the external magnetic flux through the SQUID loop. The most notable feature is that the voltage across the SQUID is _periodic_ in multiples of the magnetic flux quantum $\Phi_0$. This is the principles that allows the SQUID to be used to sense magnetic flux, i.e. it is a flux-to-voltage transformer. 
+This function sweeps the external magnetic flux through the SQUID loop. The most notable feature is that the voltage across the SQUID is _periodic_ in multiples of the magnetic flux quantum \(\Phi_0\). This is the principles that allows the SQUID to be used to sense magnetic flux, i.e. it is a flux-to-voltage transformer. 
 
 The function performs the same iterative procedure as above, but this time the bias current is set to a constant value and the external flux is swept.
 
-Here is the plot for $I_b=2.4I_0$ which is within the resisitive regime of the dc-SQUID
+Here is the plot for \(I_b=2.4I_0\) which is within the resisitive regime of the dc-SQUID
 
 ![](/images/dc_squid/v_phi_2p4.png)
 
-The plot clearly shows a periodic oscillation with a period of 1 $\Phi_0$. The maximums appear at $n\Phi_0$ and the minimums appear at $(n+\frac{1}{2})\Phi_0$. 
+The plot clearly shows a periodic oscillation with a period of 1 \(\Phi_0\). The maximums appear at \(n\Phi_0\) and the minimums appear at \((n+\frac{1}{2})\Phi_0\). 
 
-The transfer function of the dc-SQUID is the slope of the $V-\Phi$ curve 
+The transfer function of the dc-SQUID is the slope of the \(V-\Phi\) curve 
 $$
 H=\bigg|\frac{\partial V}{\partial \Phi}\bigg|_{I=I_b}
 $$
 
-and the goal for using the device in an experiment is to have the largest transfer coefficient, which is at the locations $(n+\frac{1}{4})\Phi_0$. This gives the largest voltage output reading for some magnetic flux penetrating the loop.
+and the goal for using the device in an experiment is to have the largest transfer coefficient, which is at the locations \((n+\frac{1}{4})\Phi_0\). This gives the largest voltage output reading for some magnetic flux penetrating the loop.
 
 Here is another plot for several different bias points. 
 
 ![](/images/dc_squid/v_phi_many.png)
 
-At lower bias currents, there are large portions of the plot where the voltage is 0, which would not be good because then the magnetic flux would not be detected. It looks like the $2.25I_0$ curve has the largest transfer coefficient, which is good, but there is little difference in the output voltage for other areas, which would not allow you to distinguish between certain values of magnetic flux.
+At lower bias currents, there are large portions of the plot where the voltage is 0, which would not be good because then the magnetic flux would not be detected. It looks like the \(2.25I_0\) curve has the largest transfer coefficient, which is good, but there is little difference in the output voltage for other areas, which would not allow you to distinguish between certain values of magnetic flux.
 
-Therefore the best bias point would be the $2.5I_0$ curve because it gives a nice sinusoidal shape with relatively large transfer coefficient. This supports the idea that the SQUID should be biased in the resistive regime $I_b > 2I_0$. 
+Therefore the best bias point would be the \(2.5I_0\) curve because it gives a nice sinusoidal shape with relatively large transfer coefficient. This supports the idea that the SQUID should be biased in the resistive regime \(I_b > 2I_0\). 
 
 Here is a plot from a research paper showing the same thing from measured data
 
 ![](/images/dc_squid/measured_v_phi_bolometer.png)
 
-From https://arxiv.org/pdf/1112.4215
+From [Dobbs et. al.](https://arxiv.org/pdf/1112.4215)
 
 
 
