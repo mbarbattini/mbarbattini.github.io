@@ -33,10 +33,15 @@ But quantum mechanics enters the story because the loop cannot allow any value o
 $$
 \Phi=n\frac{h}{q}=n\Phi_0
 $$
-where \\(q=2e\\) is the charge of the particle, in this case a Cooper pair (two electrons with charge \\(e$\\)), and \\(n\\) is an integer. Therefore the magnetic flux quantum is \\(\Phi_0=\frac{h}{2e}\\)
+where \\(q=2e\\) is the charge of the particle, in this case a Cooper pair (two electrons with charge \\(e\\)), and \\(n\\) is an integer. Therefore the magnetic flux quantum is \\(\Phi_0=\frac{h}{2e}\\)
 
 ### Josephson Junctions
-If you add a small, non-superconducting barrier in-between a location in the superconducting loop, you create a Josephson junction. Here, the macroscopic wavefunction will tunnel through the small barrier. 
+If you add a small, non-superconducting barrier in-between a location in the superconducting loop, you create a Josephson junction. Here, the macroscopic wavefunction will tunnel through the small barrier, leading to two values of the phase of the wavefunction, one before and one after the insulator
+
+![](/images/dc_squid/jj.png)
+
+From DOI: 10.13140/RG.2.2.19768.29446
+
 
 Brian Josephson discovered two equations, the DC equation which describes the value of the super-current across the junction
 
