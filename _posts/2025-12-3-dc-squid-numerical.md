@@ -4,21 +4,13 @@ date: 2025-12-3 11:00:00
 ---
 Here we numerically simulate the dc-SQUID and plot the voltage across the junction and compare it to data presented in research papers.
 
-The full code can be found on my Github repository [link](https://github.com/mbarbattini/computational_physics/tree/main/1_dc_squid_numerical)
+The full code can be found on my [Github repository](https://github.com/mbarbattini/computational_physics/tree/main/1_dc_squid_numerical)
 
-### References
 
-- _Quantum noise theory for the dc-SQUID_, Koch. 
-
-    https://pubs.aip.org/aip/apl/article/38/5/380/525250/Quantum-noise-theory-for-the-dc-SQUID 
-
-- _The SQUID Handbook_, John Clarke
-
-- _Principles and Applications of SQUIDs_, John Clarke
 
 ## Introduction
 
-A SQUID is the most sensitive detector of magnetic flux in the world. It has applications from biomagnetism where it can measure the electrical signals of brain cells, to superconducting qubits in quantum computing, and to measuring the magnetic field due to ancient rock samples deep in the Earth's crust.
+A SQUID is the most sensitive detector of magnetic flux in the world. It has applications from biomagnetism where it can measure the electrical signals of brain cells, to superconducting qubits used in quantum computing, and to geomagnetism by measuring the magnetic field due to ancient rock samples deep in the Earth's crust.
 
 ## Theory
 
@@ -33,7 +25,8 @@ But quantum mechanics enters the story because the loop cannot allow any value o
 $$
 \Phi=n\frac{h}{q}=n\Phi_0
 $$
-where \\(q=2e\\) is the charge of the particle, in this case a Cooper pair (two electrons with charge \\(e\\)), and \\(n\\) is an integer. Therefore the magnetic flux quantum is \\(\Phi_0=\frac{h}{2e}\\)
+
+where \\(q=2e\\) is the charge of the particle, in this case a Cooper pair (two electrons with charge \\(e\\)), and \\(n\\) is an integer.
 
 ### Josephson Junctions
 If you add a small, non-superconducting barrier in-between a location in the superconducting loop, you create a Josephson junction. Here, the macroscopic wavefunction will tunnel through the small barrier, leading to two values of the phase of the wavefunction, one before and one after the insulator
@@ -323,5 +316,11 @@ Here is a plot from a research paper showing the same thing from measured data
 From [Dobbs et. al.](https://arxiv.org/pdf/1112.4215)
 
 
+### References
 
+- [_Quantum noise theory for the dc-SQUID_, Koch ](https://pubs.aip.org/aip/apl/article/38/5/380/525250/Quantum-noise-theory-for-the-dc-SQUID)
+
+- [_The SQUID Handbook_, John Clarke](https://onlinelibrary.wiley.com/doi/book/10.1002/3527603646)
+
+- [_Principles and Applications of SQUIDs_, John Clarke](https://ieeexplore.ieee.org/document/34120)
 
